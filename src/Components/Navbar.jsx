@@ -12,9 +12,9 @@ export default function Navbar() {
         {navLinks.map((link) => (
           <li
             key={link.id}
-            // className={`${
-            //   active === link.title ? "text-white" : "text-secondary"
-            // } font-poppins font-medium cursor-pointer text-[16px]`}
+            className={`${
+              active === link.title ? "text-white" : "text-secondary"
+            } font-poppins font-medium cursor-pointer text-[16px]`}
             onClick={() => {
               setToggle(!toggle);
               setActive(link.title);
