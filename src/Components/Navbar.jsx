@@ -13,7 +13,7 @@ export default function Navbar() {
           <li
             key={link.id}
             className={`${
-              active === link.title ? "text-white" : "text-secondary"
+              active === link.title ? "text-white" : "text-blue"
             } font-poppins font-medium cursor-pointer text-[16px]`}
             onClick={() => {
               setToggle(!toggle);

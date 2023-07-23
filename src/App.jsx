@@ -5,7 +5,9 @@ import Navbar from "../src/Components/Navbar";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      <div className="relative z-0 bg-primary">
+        <Navbar />
+      </div>
     </BrowserRouter>
   );
 }
