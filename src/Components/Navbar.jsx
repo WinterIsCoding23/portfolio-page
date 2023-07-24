@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="pl-1">
           <Link className="flex items-center gap-2" to="/">
             <img
-              src="../src/assets/mdw-high-resolution-logo-color-on-transparent-background.png"
+              src="mdw-high-resolution-logo-color-on-transparent-background.png"
               alt="logo"
               className="w-20 h-20 rounded-lg object-contain"
             />
