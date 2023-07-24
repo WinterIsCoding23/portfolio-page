@@ -7,8 +7,8 @@ export default function Navbar() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div>
-      <ul>
+    <nav className="w-full flex items-center py-5 fixed top-0 z-201q">
+      <ul className="list-none hidden sm:flex flex-row gap-10">
         {navLinks.map((link) => (
           <li
             key={link.id}
@@ -24,6 +24,6 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 }
