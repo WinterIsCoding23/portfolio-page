@@ -22,7 +22,7 @@ export default function Navbar() {
             </p>
           </Link>
         </div>
-        <div className="pr-1">
+        <div className="flex items-center pr-1">
           <ul className="list-none hidden sm:flex flex-row gap-10">
             {navLinks.map((link) => (
               <li
