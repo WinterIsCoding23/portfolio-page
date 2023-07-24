@@ -6,7 +6,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-black">
-        <Navbar />
+        <div className="bg-cover bg-center bg-no-repeat">
+          <Navbar />
+        </div>
       </div>
     </BrowserRouter>
   );
