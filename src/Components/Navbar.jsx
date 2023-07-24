@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import { navLinks } from "../constants/index";
 
@@ -9,7 +10,9 @@ export default function Navbar() {
   return (
     <nav className="w-full flex items-center py-5 fixed top-0 z-20 pl-1 pr-1">
       <div className="w-full flex justify-between ">
-        <div className="pl-1">Logo</div>
+        <div className="pl-1">
+          <Link to="/">Logo</Link>
+        </div>
         <div className="pr-1">
           <ul className="list-none hidden sm:flex flex-row gap-10">
             {navLinks.map((link) => (
