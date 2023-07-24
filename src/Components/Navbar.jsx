@@ -11,13 +11,15 @@ export default function Navbar() {
     <nav className="w-full flex items-center py-5 fixed top-0 z-20 pl-1 pr-1">
       <div className="w-full flex justify-between ">
         <div className="pl-1">
-          <Link to="/">
+          <Link className="flex items-center gap-2" to="/">
             <img
               src="../src/assets/mdw-high-resolution-logo-color-on-transparent-background.png"
               alt="logo"
-              className="w-9 h-9 rounded-lg object-contain"
+              className="w-20 h-20 rounded-lg object-contain"
             />
-            <p>Markus Dominic Winter | Full Stack Developer</p>
+            <p className="text-[18px] cursor-pointer">
+              Markus Dominic Winter | Full Stack Developer
+            </p>
           </Link>
         </div>
         <div className="pr-1">
