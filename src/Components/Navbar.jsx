@@ -8,7 +8,7 @@ export default function Navbar() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex items-center py-5 fixed top-0 z-20 pl-5 pr-1">
+    <nav className="w-full flex items-center py-5 fixed top-0 left-0 z-20 pl-5 pr-1">
       <div className="w-full flex justify-between ">
         <div className="pl-1">
           <Link className="flex items-center gap-2" to="/">
