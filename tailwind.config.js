@@ -11,6 +11,24 @@ export default {
         height: "0.5em",
         backgroundColor: "rgb(0, 183, 255)",
         borderRadius: "0.5em",
+        // styles for clicked state
+        "&.clicked:nth-child(1)": {
+          transform: "rotate(45deg) translate(0.75em, 1.25em)",
+          transition: "ease-out 0.5s",
+        },
+        "&.clicked:nth-child(2)": {
+          transform: "scale(0.1)",
+          transition: "ease-out 0.5s",
+        },
+        "&.clicked:nth-child(3)": {
+          transform: "rotate(135deg) translate(-0.5em, 1em)",
+          transition: "ease-out 0.5s",
+        },
+        // styles for unclicked state
+        "&.unclicked": {
+          transform: "rotate(0) translate(0)",
+          transition: "cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s",
+        },
       },
       menu: {
         width: "50%",
