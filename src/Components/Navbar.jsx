@@ -10,8 +10,8 @@ export default function Navbar() {
 
   // burger-menu
   // to change burger classes
-  const [burger_class, setBurgerClass] = useState("burgerBar unclicked");
-  const [menu_class, setMenuClass] = useState("hidden");
+  const [burgerClass, setBurgerClass] = useState("burgerBar unclicked");
+  const [menuClass, setMenuClass] = useState("hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   // toggle burger menu change
@@ -68,13 +68,13 @@ export default function Navbar() {
             className="h-full w-4 flex flex-col items-start justify-between cursor-pointer"
             onClick={updateMenu}
           >
-            <div className={burger_class}></div>
-            <div className={burger_class}></div>
-            <div className={burger_class}></div>
+            <div className={burgerClass}></div>
+            <div className={burgerClass}></div>
+            <div className={burgerClass}></div>
           </div>
           {/* Menu items for smaller screens */}
           <ul
-            className={`${menu_class} list-none absolute top-0 left-0 bg-black h-screen w-full`}
+            className={`${menuClass} list-none absolute top-0 left-0 bg-black h-screen w-full`}
           >
             {navLinks.map((link) => (
               <li
