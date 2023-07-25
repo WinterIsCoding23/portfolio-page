@@ -65,7 +65,7 @@ export default function Navbar() {
         <div className="sm:hidden">
           {/* Burger menu for smaller screens */}
           <div
-            className="h-full w-4 flex flex-col items-start justify-between cursor-pointer"
+            className="h-full w-4 flex flex-col items-start justify-between cursor-pointer bg-sky-300 mr-5"
             onClick={updateMenu}
           >
             <div className={burgerClass}></div>
@@ -74,7 +74,7 @@ export default function Navbar() {
           </div>
           {/* Menu items for smaller screens */}
           <ul
-            className={`${menuClass} list-none absolute top-0 left-0 bg-black h-screen w-full`}
+            className={`${menuClass} list-none absolute bg-sky-300 h-screen w-full`}
           >
             {navLinks.map((link) => (
               <li
