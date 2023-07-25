@@ -11,7 +11,7 @@ function App() {
         <div className="bg-cover bg-center bg-no-repeat">
           <Navbar />
         </div>
-        <div className="pt-32">
+        <div className="pt-20 sm:pt-32">
           <About />
           <Stack />
         </div>
