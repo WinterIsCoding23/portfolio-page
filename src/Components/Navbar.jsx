@@ -37,7 +37,8 @@ export default function Navbar() {
               className="w-10 h-10 sm:w-20 sm:h-20 rounded-lg object-contain"
             />
             <p className="text-[12px] sm:text-[18px] cursor-pointer">
-              Markus&nbsp;Dominic&nbsp;Winter&nbsp;| <br /> Full Stack Developer
+              Markus&nbsp;Dominic&nbsp;Winter&nbsp;| <br /> Full&nbsp;Stack
+              Developer
             </p>
           </Link>
         </div>
