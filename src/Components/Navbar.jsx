@@ -61,11 +61,11 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        {/* burger-menu */}
+        {/* burger-menu: https://www.youtube.com/watch?v=gAGcjlJyKk0 */}
         <div className="sm:hidden">
           {/* Burger menu for smaller screens */}
           <div
-            className="h-full w-4 flex flex-col items-start justify-between cursor-pointer bg-sky-300 mr-5"
+            className="burgerMenu h-full w-4 flex flex-col items-start justify-between cursor-pointer bg-sky-300 mr-5"
             onClick={updateMenu}
           >
             <div className={burgerClass}></div>
@@ -73,9 +73,7 @@ export default function Navbar() {
             <div className={burgerClass}></div>
           </div>
           {/* Menu items for smaller screens */}
-          <ul
-            className={`${menuClass} list-none absolute bg-sky-300 h-screen w-full`}
-          >
+          <ul className={`${menuClass} `}>
             {navLinks.map((link) => (
               <li
                 key={link.id}
