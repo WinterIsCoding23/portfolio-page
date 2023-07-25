@@ -11,17 +11,17 @@ export default function Navbar() {
   // burger-menu
   // to change burger classes
   const [burgerClass, setBurgerClass] = useState("burgerBar unclicked");
-  const [menuClass, setMenuClass] = useState("hidden");
+  const [menuClass, setMenuClass] = useState("menu hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   // toggle burger menu change
   const updateMenu = () => {
     if (!isMenuClicked) {
       setBurgerClass("burgerBar clicked");
-      setMenuClass("block");
+      setMenuClass("menu visible");
     } else {
       setBurgerClass("burgerBar unclicked");
-      setMenuClass("hidden");
+      setMenuClass("menu hidden");
     }
     setIsMenuClicked(!isMenuClicked);
   };
