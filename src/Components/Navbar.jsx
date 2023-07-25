@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { navLinks } from "../constants/index";
@@ -8,7 +8,7 @@ export default function Navbar() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex items-center py-5 fixed top-0 z-20 pl-1 pr-1">
+    <nav className="w-full flex items-center py-5 fixed top-0 z-20 pl-5 pr-1">
       <div className="w-full flex justify-between ">
         <div className="pl-1">
           <Link className="flex items-center gap-2" to="/">
@@ -22,7 +22,7 @@ export default function Navbar() {
             </p>
           </Link>
         </div>
-        <div className="flex items-center pr-1">
+        <div className="flex items-center pr-5">
           <ul className="list-none hidden sm:flex flex-row gap-10">
             {navLinks.map((link) => (
               <li
