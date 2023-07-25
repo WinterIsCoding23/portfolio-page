@@ -65,7 +65,7 @@ export default function Navbar() {
         <div className="sm:hidden">
           {/* Burger menu for smaller screens */}
           <div
-            className="burgerMenu h-full w-4 flex flex-col items-start justify-between cursor-pointer bg-sky-300 mr-5"
+            className="burgerMenu h-full w-full cursor-pointer bg-sky-300 mr-5"
             onClick={updateMenu}
           >
             <div className={burgerClass}></div>
