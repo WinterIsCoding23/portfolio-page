@@ -3,7 +3,7 @@ export default function About() {
     <div className="w-full h-auto">
       <div className="flex justify-around">
         <div className="px-3">
-          <h3>About</h3>
+          <h1>About</h1>
           <p>
             My name is Markus Dominic Winter. I am a Full Stack Developer and
             recently graduated in the 3-month Full Stack Web
