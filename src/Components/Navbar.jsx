@@ -10,19 +10,23 @@ export default function Navbar() {
 
   // burger-menu
   // to change burger classes
-  const [burgerClass, setBurgerClass] = useState("burgerBar unclicked");
-  const [menuClass, setMenuClass] = useState("menu hidden");
+  // const [burgerClass, setBurgerClass] = useState("burgerBar unclicked");
+  // const [menuClass, setMenuClass] = useState("menu hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   // toggle burger menu change
+  // const updateMenu = () => {
+  //   if (!isMenuClicked) {
+  //     setBurgerClass("burgerBar clicked");
+  //     setMenuClass("menu visible");
+  //   } else {
+  //     setBurgerClass("burgerBar unclicked");
+  //     setMenuClass("menu hidden");
+  //   }
+  //   setIsMenuClicked(!isMenuClicked);
+  // };
+
   const updateMenu = () => {
-    if (!isMenuClicked) {
-      setBurgerClass("burgerBar clicked");
-      setMenuClass("menu visible");
-    } else {
-      setBurgerClass("burgerBar unclicked");
-      setMenuClass("menu hidden");
-    }
     setIsMenuClicked(!isMenuClicked);
   };
 
@@ -61,19 +65,55 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        {/* burger-menu: https://www.youtube.com/watch?v=gAGcjlJyKk0 */}
+        {/* -----------------New try------------------------------- */}
         <div className="sm:hidden">
-          {/* Burger menu for smaller screens */}
           <div
+            className={`custom-burgerMenu ${
+              isMenuClicked ? "clicked" : "unclicked"
+            }`}
+            onClick={updateMenu}
+          >
+            <div
+              className={`custom-burgerBar ${
+                isMenuClicked ? "clicked" : "unclicked"
+              }`}
+            >
+              1
+            </div>
+            <div
+              className={`custom-burgerBar ${
+                isMenuClicked ? "clicked" : "unclicked"
+              }`}
+            >
+              2
+            </div>
+            <div
+              className={`custom-burgerBar ${
+                isMenuClicked ? "clicked" : "unclicked"
+              }`}
+            >
+              3
+            </div>
+          </div>
+        </div>
+        <div
+          className={`custom-menu ${isMenuClicked ? "visible" : "hidden"}`}
+        ></div>
+        {/* burger-menu: https://www.youtube.com/watch?v=gAGcjlJyKk0 */}
+        {/* https://github.com/moses-netshitangani/burger-menu/blob/main/src/components/navbar.js */}
+        {/* ------------------------------------- */}
+        {/* <div className="sm:hidden"> */}
+        {/* Burger menu for smaller screens */}
+        {/* <div
             className="burgerMenu h-full w-full cursor-pointer bg-sky-300 mr-5"
             onClick={updateMenu}
           >
             <div className={burgerClass}></div>
             <div className={burgerClass}></div>
             <div className={burgerClass}></div>
-          </div>
-          {/* Menu items for smaller screens */}
-          <ul className={`${menuClass} `}>
+          </div> */}
+        {/* Menu items for smaller screens */}
+        {/* <ul className={`${menuClass} `}>
             {navLinks.map((link) => (
               <li
                 key={link.id}
@@ -89,8 +129,9 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
         {/* end burger-menu */}
+        {/* ------------------------------------- */}
       </div>
     </nav>
   );
