@@ -54,7 +54,7 @@ export default function Navbar() {
                 key={link.id}
                 className={`${
                   active === link.title
-                    ? "text-white mt-2 mb-2 mx-auto shadow-lg group-hover:bg-slate-400"
+                    ? "text-white mt-2 mb-2 mx-auto shadow-lg group-hover:bg-slate-400 group-hover:rounded-xl"
                     : "text-sky-500 mt-2 mb-2 mx-auto shadow-lg "
                 } font-medium cursor-pointer text-[16px]`}
                 onClick={() => {
