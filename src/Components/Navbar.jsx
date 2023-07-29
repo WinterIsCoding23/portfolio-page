@@ -46,15 +46,17 @@ export default function Navbar() {
             </p>
           </Link>
         </div>
-        <div className=" items-center pr-5 hidden sm:flex">
+        <div className=" items-center pr-5 hidden sm:flex ">
           {/* Links for larger screens */}
-          <ul className="list-none flex flex-row gap-10">
+          <ul className="list-none flex flex-row gap-10 shadow-lg group">
             {navLinks.map((link) => (
               <li
                 key={link.id}
                 className={`${
-                  active === link.title ? "text-white" : "text-sky-500"
-                } font-poppins font-medium cursor-pointer text-[16px]`}
+                  active === link.title
+                    ? "text-white mt-2 mb-2 mx-auto shadow-lg group-hover:bg-slate-400"
+                    : "text-sky-500 mt-2 mb-2 mx-auto shadow-lg "
+                } font-medium cursor-pointer text-[16px]`}
                 onClick={() => {
                   setToggle(!toggle);
                   setActive(link.title);
