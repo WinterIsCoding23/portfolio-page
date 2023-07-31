@@ -2,12 +2,26 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import styles from "../styles";
-import { fadeIn } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
+import { roles } from "../constants/index";
+
+const RoleCard = ({ icon, title }) => {
+  return (
+    <Tilt>
+      <motion.div>
+        <div>
+          <img src={icon} alt={title} />
+          <h3></h3>
+        </div>
+      </motion.div>
+    </Tilt>
+  );
+};
 
 export default function About() {
   return (
     <div>
-      <motion.div>
+      <motion.div variants={textVariant()}>
         <h3 className={styles.sectionHeadText}>About me</h3>
       </motion.div>
 
@@ -22,7 +36,7 @@ export default function About() {
         est Lorem ipsum dolor sit amet.
       </motion.p>
 
-      <div></div>
+      <div>{roles.map((role) => CARD)}</div>
     </div>
   );
 }
