@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#050816",
+        headline: "rgb(245, 245, 245)",
+        paragraph: "rgb(148, 163, 184)",
       },
       custom: {
         burgerMenu: {

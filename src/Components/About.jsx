@@ -1,21 +1,24 @@
+import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
+
+import styles from "../styles";
+
 export default function About() {
   return (
-    <div className="w-full h-auto">
-      <div className="flex justify-around">
-        <div className="px-3">
-          <h1>About</h1>
-          <p>
-            My name is Markus Dominic Winter. I am a Full Stack Developer and
-            recently graduated in the 3-month Full Stack Web
-            Development-bootcamp at SPICED Academy in Berlin. I am especially
-            interested in frontend.
-          </p>
-        </div>
-        <div>
-          <img src="/placeholder_portrait.svg" alt="portrait" />
-          <p>This is me</p>
-        </div>
-      </div>
+    <div>
+      <motion.div>
+        <h3 className={styles.sectionHeadText}>About me</h3>
+      </motion.div>
+
+      <motion.p className="text-[18px] tracking-normal text-left mt-2 text-paragraph">
+        Self-description Lorem ipsum dolor sit amet, consetetur sadipscing
+        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+        est Lorem ipsum dolor sit amet.
+      </motion.p>
+
+      <div></div>
     </div>
   );
 }
