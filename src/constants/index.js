@@ -17,7 +17,7 @@ const navLinks = [
 
 const roles = [
   {
-    title: "Full Stack Developer",
+    title: "Full Stack ",
     icon: placeholder,
   },
   {

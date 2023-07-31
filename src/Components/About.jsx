@@ -7,10 +7,11 @@ import { roles } from "../constants/index";
 
 const RoleCard = ({ icon, title, index }) => {
   return (
-    <Tilt>
+    <Tilt className="max-w-[30%] xs:w-[250px] w-full">
+      {/* <div className="max-w-xs"> */}
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className="w-full shadow-xl rounded-lg p-[2px] bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+        className="w-full shadow-xl rounded-lg p-[1px] bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
       >
         <div
           options={{
@@ -26,6 +27,7 @@ const RoleCard = ({ icon, title, index }) => {
           </h3>
         </div>
       </motion.div>
+      {/* </div> */}
     </Tilt>
   );
 };
@@ -48,7 +50,11 @@ export default function About() {
         est Lorem ipsum dolor sit amet.
       </motion.p>
 
-      <div>{roles.map((role) => CARD)}</div>
+      <div className="mt-20 flex flex-wrap gap-10">
+        {roles.map((role, index) => (
+          <RoleCard key={role.title} index={index} {...role} />
+        ))}
+      </div>
     </div>
   );
 }
