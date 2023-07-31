@@ -5,13 +5,25 @@ import styles from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { roles } from "../constants/index";
 
-const RoleCard = ({ icon, title }) => {
+const RoleCard = ({ icon, title, index }) => {
   return (
     <Tilt>
-      <motion.div>
-        <div>
-          <img src={icon} alt={title} />
-          <h3></h3>
+      <motion.div
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+        className="w-full shadow-xl rounded-lg p-[2px] bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+      >
+        <div
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+          }}
+          className="bg-emerald-800 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        >
+          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
         </div>
       </motion.div>
     </Tilt>
