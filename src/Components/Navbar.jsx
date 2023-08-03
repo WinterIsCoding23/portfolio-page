@@ -31,7 +31,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full flex items-center py-5 fixed top-0 left-0 z-20 pl-5 pr-1">
+    <nav className="w-full flex items-center py-5 fixed top-0 left-0 z-20 pl-5 pr-1 bg-black">
       <div className="w-full flex justify-between ">
         <div className="pl-1 w-1/2 sm:w-full">
           <Link className="flex items-center gap-2" to="/">
