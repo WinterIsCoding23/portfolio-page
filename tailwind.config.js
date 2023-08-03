@@ -3,6 +3,7 @@ export default {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      screens: { mdlg: "838 px" },
       colors: {
         headline: "rgb(245, 245, 245)",
         paragraph: "rgb(148, 163, 184)",

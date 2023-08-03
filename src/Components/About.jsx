@@ -7,7 +7,7 @@ import { roles } from "../constants/index";
 
 const RoleCard = ({ icon, title, index }) => {
   return (
-    <Tilt className="max-w-[30%] xs:w-[250px] w-full">
+    <Tilt className="max-w-[20%] max-h-[20%] xs:w-[250px] w-full">
       {/* <div className="max-w-xs"> */}
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -19,7 +19,7 @@ const RoleCard = ({ icon, title, index }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-emerald-800 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-emerald-800 rounded-[20px] py-3 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
           <h3 className="text-white text-[20px] font-bold text-center">
@@ -50,7 +50,7 @@ export default function About() {
         est Lorem ipsum dolor sit amet.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-10 flex flex-wrap gap-10 ">
         {roles.map((role, index) => (
           <RoleCard key={role.title} index={index} {...role} />
         ))}
